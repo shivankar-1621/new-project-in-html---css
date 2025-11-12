@@ -38,6 +38,22 @@ body {
   height: auto;
 }
 
+.menu-toggle ul:hover .li {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  grid-area: menu;
+  right: 20px;
+
+}
+
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -91,6 +107,7 @@ body {
 .dropdown-menu .dropdown a:hover {
   background: #005f56;
 }
+
 
 .btn {
   background: #a8ff60;
@@ -252,11 +269,25 @@ font-size: 14px;
   color: #00796b;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .navbar {
     padding: 20px;
     flex-direction: column;
     gap: 10px;
+    
+  }
+
+  .nav-links {
+    display: none;
+  }
+.btn{
+  display: none;
+}
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
   }
 
   .hero {
