@@ -269,7 +269,7 @@ font-size: 14px;
   color: #00796b;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 786px) {
   .navbar {
     padding: 20px;
     flex-direction: column;
